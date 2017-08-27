@@ -101,6 +101,10 @@ class RenderPDF {
 
     generatePdfOptions() {
         const options = {};
+
+	options.paperWidth = 8.27;
+	options.paperHeight = 11.7;
+ 
         if (this.options.landscape !== undefined) {
             options.landscape = !!this.options.landscape;
         }
